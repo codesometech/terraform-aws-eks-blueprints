@@ -755,6 +755,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../crowdstrike-falcon/" class="md-nav__link">
+        CrowdStrike Falcon
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../csi-secrets-store-provider-aws/" class="md-nav__link">
         secrets-store-csi-driver-provider-aws
       </a>
@@ -1447,7 +1461,7 @@
 <p>For complete project documentation, please visit the <a href="https://cert-manager.io/docs/">cert-manager documentation site</a>.</p>
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
 <p>cert-manger can be deployed by enabling the add-on via the following.</p>
-<div class="highlight"><pre><span></span><code>enable_cert_manager = true
+<div class="highlight"><pre><span></span><code><span class="na">enable_cert_manager</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="no">true</span>
 </code></pre></div>
 <p>cert-manger can optionally leverage the <code>cert_manager_domain_names</code> global property of the <code>kubernetes_addon</code> submodule for DNS01 protocol. The value for this property should be a list of Route53 domains managed by your account. cert-manager is restricted to the zones from the list.</p>
 <div class="highlight"><pre><span></span><code>cert_manager_domain_names = [&lt;cluster_domain&gt;, &lt;another_cluster_domain&gt;]
